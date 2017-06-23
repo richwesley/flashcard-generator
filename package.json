@@ -1,0 +1,26 @@
+{
+  "name": "flashcard-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richwesley/flashcard-generator.git"
+  },
+  "author": "RC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richwesley/flashcard-generator/issues"
+  },
+  "homepage": "https://github.com/richwesley/flashcard-generator#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^3.1.1",
+    "json": "^9.0.6",
+    "jsonfile": "^3.0.0",
+    "prettyjson": "^1.2.1"
+  }
+}
