@@ -1,3 +1,16 @@
 {
-    "basicCard" : []
-}undefinedundefinedundefinedundefined[][]
+    "basicCard": [
+        {
+            "front": "a",
+            "back": "b"
+        },
+        {
+            "front": "a",
+            "back": "\\ n"
+        },
+        {
+            "front": "aw",
+            "back": "a"
+        }
+    ]
+}

@@ -1,15 +1,15 @@
-const inquirer = require("inquirer");
+const inquirer = require('inquirer');
 const fs = require('fs');
-const jsonfile = require('./readjsonfile.js');
+const read = require('./readjsonfile.js');
+const write = require('./writejsonfile.js');
 const prettyjson =require('prettyjson');
- 
-
 var BasicCard = require('./BasicCard.js');
 var Clozecard = require('./ClozeCard.js');
 
 var fileContents = [];
 
-inquirer.prompt ([
+function promptCard () {
+  return inquirer.prompt ([
     {
         type: "input",
         name: "front",
@@ -17,38 +17,29 @@ inquirer.prompt ([
     },
     {
         type: "input",
-        name: "back", 
+        name: "back",
         message: "Input back of card"
     }
+  ]).then(function(response){
+      var newBasicCard = new BasicCard.BasicCard(response.front, response.back);
+      return newBasicCard;
+  })
+}
 
-]).then(function(response){
-     var newBasicCard = new BasicCard.BasicCard(response.front, response.back);
-       console.log(response.front, response.back); 
-       console.log(newBasicCard);
-    });
-
-
- fs.readFile('CardFile.JSON', function (err, data){
-        if (err) {
-            throw err;
-        }    
-        fileContents = JSON.parse(data)
-        console.log('Before push' + prettyjson.render(fileContents));
-        fileContents.basicCard.push(newBasicCard);
-        console.log('After push' + prettyjson.render(fileContents));
-    });
-       
-fs.appendFile('CardFile.JSON', JSON.stringify(fileContents, null, 4), 'utf8', function(err) {
-            if (err) {
-                console.log(err);         
-            } else {
-                fs.readFile('CardFile.JSON', function (err, data){
-                    fileContents = JSON.parse(data)
-                    console.log('before push' + prettyjson.render(fileContents));
-                    fileContents.basicCard.push(newBasicCard);
-                    console.log('Aftet Push' + prettyjson.render(fileContents));
-        
-    });
-            }
-   
+Promise.all([
+  promptCard(),
+  read('CardFile.JSON')
+])
+.then(function ([card, contents]) {
+  if (!contents) {
+    contents = { basicCard: [] }
+  }
+  contents.basicCard.push(card)
+  return write('CardFile.JSON', contents);
+})
+.then(function (data) {
+  console.log(prettyjson.render(data));
+})
+.catch(function (err) {
+  console.log('Err', err);
 });
