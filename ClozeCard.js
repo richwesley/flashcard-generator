@@ -24,20 +24,3 @@ exports.zCard = function zCard(fullSentence, cloze){
   }  
 }   
    
-
-// var czCard = function (fullSentence, cloze){    
-//   this.fullSentence = fullSentence;
-//   this.cloze = cloze;
-  // return new zCard(fullSentance, cloze);
-    // this.partial = function () {
-    //   if(this.fullSentence.includes(this.cloze)) {
-    //     // var partialCloze = string.replace(this.cloze, '[  ]');
-    //     console.log(partialCloze);
-    //      return new Card(fullSentence, cloze);
-    //   } else {
-    //     console.log ("You did not contruct your cloze card correcly")
-    //   }
-    // }
-// }        
-// module.exports = czCard;      
-  

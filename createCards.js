@@ -42,7 +42,10 @@ const ClozeCard = require('./ClozeCard.js');
           return newBasicCard;
       })
     }
-  
+  // Run the function to create a new card with the BasicCard module and read the JSON file with the
+  // readjsonfile module.  After theses promises are met, then push the new card into object containing
+  // the JSON file contents. Then call the writejsonfile to re-write to the JSON file with new card and
+  //display the JSON file to the console. 
 
     Promise.all([
       inputBasicCard(),
