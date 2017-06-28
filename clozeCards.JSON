@@ -1,0 +1,41 @@
+{
+    "clozeCard": [
+        {
+            "fullSentence": "Orange is the new black",
+            "cloze": "new"
+        },
+        {
+            "fullSentence": "Man of the Silver Mountain",
+            "cloze": "Silver"
+        },
+        {
+            "fullSentence": "War, what is it good for?",
+            "cloze": "good"
+        },
+        {
+            "fullSentence": "The Master of Illusion",
+            "cloze": "Master"
+        },
+        null,
+        {
+            "fullSentence": "The sentence is missing",
+            "cloze": "sentence"
+        },
+        {
+            "fullSentence": "The full sentence",
+            "cloze": "full"
+        },
+        {
+            "fullSentence": "one two three",
+            "cloze": "two"
+        },
+        {
+            "fullSentence": "fever dreams",
+            "cloze": "fever"
+        },
+        {
+            "fullSentence": "full sentence",
+            "cloze": "full"
+        }
+    ]
+}

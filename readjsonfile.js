@@ -1,5 +1,5 @@
 const fs = require('fs');
-const jsonfile = require('./readjsonfile.js');
+//const jsonfile = require('./readjsonfile.js');
 
 function readfile (filename) {
   return new Promise(function (resolve, reject) {

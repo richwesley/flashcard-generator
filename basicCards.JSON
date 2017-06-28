@@ -1,0 +1,84 @@
+{
+    "basicCard": [
+        {
+            "front": "King",
+            "back": "Burger"
+        },
+        {
+            "front": "Della",
+            "back": "taco"
+        },
+        {
+            "front": "Ronnie",
+            "back": "McDonnie"
+        },
+        {
+            "front": "Carlie",
+            "back": "Junior"
+        },
+        {
+            "front": "Kendra-Fry",
+            "back": "Chicken"
+        },
+        {
+            "front": "Queen",
+            "back": "Dairy"
+        },
+        {
+            "front": "Huttie",
+            "back": "Piza"
+        },
+        {
+            "front": "Freezie",
+            "back": "Foster"
+        },
+        {
+            "front": "First Fart",
+            "back": "Smells"
+        },
+        {
+            "front": "Where do we go now",
+            "back": "downtown"
+        },
+        {
+            "front": "In the heat and the rain",
+            "back": "with whips and chains"
+        },
+        {
+            "front": "Like a light in the black",
+            "back": "I'm going home"
+        },
+        {
+            "front": "The answer to life, universe and everything",
+            "back": "42"
+        },
+        {
+            "front": "Where are all of the tacos",
+            "back": "On every corner"
+        },
+        {
+            "front": "Between",
+            "back": "H&H"
+        },
+        {
+            "front": "The Q",
+            "back": "The A"
+        },
+        {
+            "front": "This Question",
+            "back": "This Answer"
+        },
+        {
+            "front": "Sammy",
+            "back": "Hagar"
+        },
+        {
+            "front": "Alice",
+            "back": "Cooper"
+        },
+        {
+            "front": "Input the Question",
+            "back": "Input the Answer"
+        }
+    ]
+}
