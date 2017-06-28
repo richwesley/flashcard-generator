@@ -4,7 +4,7 @@
     *Basic flash cards with the question on the front and answer on back
     *Cloze cards with a parital sentence on the front and missing word on the back
 ### Technologies and Packages Used
-'Node.js', 'Javascript', 'JSON', 'Inquirer.js', 'PrettyJSON.js'
+`Node.js`  `Javascript`  `JSON`  `Inquirer.js`  `PrettyJSON.js`
 ### Application Notes
 #### createCards.js is the main module.  To start app use node createCards
     The app will ask you which type of card you would like to make and gather input from user
