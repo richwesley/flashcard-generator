@@ -36,6 +36,18 @@
         {
             "fullSentence": "full sentence",
             "cloze": "full"
+        },
+        {
+            "fullSentence": "The sum of all fears",
+            "cloze": "sum"
+        },
+        {
+            "fullSentence": "My eyes have seen the glory",
+            "cloze": "eyes"
+        },
+        {
+            "fullSentence": "the full deal",
+            "cloze": "full"
         }
     ]
 }

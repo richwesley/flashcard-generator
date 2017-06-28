@@ -79,6 +79,10 @@
         {
             "front": "Input the Question",
             "back": "Input the Answer"
+        },
+        {
+            "front": "What is 1 + 1",
+            "back": "2"
         }
     ]
 }

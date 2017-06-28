@@ -1,8 +1,8 @@
 # flashcard-generator
 ![Flash Card Generator](flashcards.png)
 ## Application to create two styles of flash cards
-    * Basic flash cards with the question on the front and answer on back
-    * Cloze cards with a parital sentence on the front and missing word on the back
+* Basic flash cards with the question on the front and answer on back
+* Cloze cards with a parital sentence on the front and missing word on the back
 ### Technologies and Packages Used
 `Node.js`  `Javascript`  `JSON`  `Inquirer.js`  `PrettyJSON.js`
 ### Application Notes
@@ -16,7 +16,9 @@
 #### readjsonfile.js and writejsonfile.js
     Since JSON file cannot be appended, these modules are used to read the JSON file and then 're'write
     the file after the new card is created.
-#### partial.js
+#### createClozeSentence.js
     Since only the full sentence is being stored in ClozeCard.js, this module creates the partial sentence
-    (i.e. the sentence - the 'cloze') which is used during actual game play.
+    (i.e. the sentence - the 'cloze') which is used during actual game play.  It inputs data from the
+    clozeCards.JSON file and creates and returns the front of the flash card.  node creatClozeSentence to check it out.
+    
 
