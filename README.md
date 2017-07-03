@@ -1,4 +1,4 @@
-# flashcard-generator
+# flashcard-generator :squirrel
 ![Flash Card Generator](flashcards.png)
 ## Application to create two styles of flash cards
 * Basic flash cards with the question on the front and answer on back
